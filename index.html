@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veda Tech | Virtual Internships &amp; IT Training</title>
+<meta name="description" content="Veda Tech offers practical virtual internships and IT training for B.Tech, BCA, MCA and diploma students in web development, data science, Python and cloud.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fb;--sf:#fff;--ink:#0b1b3a;--mu:#55627d;--ln:#dde3ef;--or:#1f5eff;--navy:#0a1f44;--navy2:#06142e;--soft:#eaf2ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081226;--sf:#0f1c38;--ink:#eaf0ff;--mu:#9db0d3;--ln:#22305a;--soft:#14264d;--or:#4f86ff}}
+:root[data-theme="dark"]{--bg:#081226;--sf:#0f1c38;--ink:#eaf0ff;--mu:#9db0d3;--ln:#22305a;--soft:#14264d;--or:#4f86ff}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",sans-serif;line-height:1.12;margin:0 0 .5em}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:800}
+p{margin:0 0 1em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px;border-radius:6px}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.head{max-width:60ch;margin-bottom:28px}.head p{color:var(--mu)}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem "Instrument Sans",sans-serif;padding:12px 24px;border-radius:99px;background:var(--or);color:#fff;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.o{background:transparent;border:1.5px solid #ffffff88;color:#fff}
+.tick{background:var(--navy2);color:#fff;overflow:hidden;white-space:nowrap;font-weight:600;font-size:.85rem;border-bottom:1px solid #ffffff18}
+.tick div{display:inline-block;padding:9px 0;animation:mq 28s linear infinite}
+.tick span{margin:0 22px}.tick b{color:var(--or)}
+@keyframes mq{to{transform:translateX(-50%)}}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--sf);border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;gap:16px;height:64px}
+.logo{font:800 1.1rem "Bricolage Grotesque",sans-serif;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:var(--navy);color:var(--or);font-style:normal}
+.logo em{color:var(--or);font-style:normal}
+nav{margin-left:auto}nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:8px 11px;border-radius:8px;text-decoration:none;font-weight:500;font-size:.92rem}
+nav a:hover,nav a.on{color:var(--or);background:var(--soft)}
+.ib{background:none;border:1px solid var(--ln);color:var(--ink);border-radius:8px;padding:7px 11px;cursor:pointer;font:inherit}
+.menu{display:none}
+@media(max-width:860px){.menu{display:block;margin-left:auto}nav{position:absolute;left:0;right:0;top:64px;background:var(--sf);border-bottom:1px solid var(--ln);display:none;margin:0}nav.open{display:block}nav ul{flex-direction:column;padding:8px 20px 16px}.bar .btn{display:none}}
+.hero{background:radial-gradient(circle at 80% 10%,#16336b,var(--navy) 45%,var(--navy2));color:#fff;text-align:center;padding:96px 0 80px}
+.hero .pill{display:inline-block;border:1px solid #ffffff33;border-radius:99px;padding:5px 14px;font-size:.82rem;margin-bottom:22px;background:#ffffff0f}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:800;margin:0 auto 18px;max-width:14ch}
+.hero h1 em{color:var(--or);font-style:normal}
+.hero .sub{letter-spacing:.14em;font-size:.8rem;color:#9db6e6;margin-bottom:14px}
+.hero p.l{max-width:52ch;margin:0 auto 26px;color:#c9d6f2}
+.chk{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin-top:26px;font-size:.85rem;color:#c9d6f2}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:-40px;position:relative}
+.stat{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:18px;text-align:center}
+.stat b{display:block;font:800 2rem "Bricolage Grotesque",sans-serif;color:var(--or)}
+.stat span{color:var(--mu);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.card p{color:var(--mu);margin:0;flex:1}
+.card .t{font-size:.78rem;font-weight:700;color:var(--or)}
+.card .btn{align-self:flex-start;margin-top:10px;padding:8px 18px;font-size:.9rem}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.fl button{border:1px solid var(--ln);background:var(--sf);color:var(--ink);padding:7px 15px;border-radius:99px;font:inherit;cursor:pointer}
+.fl button[aria-pressed="true"]{background:var(--or);border-color:var(--or);color:#fff}
+.alt{background:var(--sf);border-block:1px solid var(--ln)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.steps div{background:var(--bg);border:1px solid var(--ln);border-radius:14px;padding:20px;position:relative}
+.steps div::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--or);color:#fff;font-weight:700;margin-bottom:10px}
+.steps p{color:var(--mu);margin:0}
+details{background:var(--sf);border:1px solid var(--ln);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;padding:15px 20px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--or);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 20px;color:var(--mu)}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--ink);width:100%}
+label{display:grid;gap:5px;font-weight:600;font-size:.92rem}
+form{display:grid;gap:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+.err{color:#e5484d;font-size:.85rem;min-height:1.2em;font-weight:500}
+.ok{color:#17a673;font-weight:600}
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:start}
+.empty{border:1.5px dashed var(--ln);border-radius:14px;padding:22px;color:var(--mu)}
+.star{color:var(--or)}
+dialog{border:0;border-radius:18px;padding:26px;width:min(480px,92vw);background:var(--sf);color:var(--ink)}
+dialog::backdrop{background:#020a1ccc}
+.dh{display:flex;justify-content:space-between;align-items:start}
+footer{background:var(--navy2);color:#9db0d3;padding:34px 0;font-size:.9rem}
+footer a{color:#fff}
+#top{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));display:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--or);color:#fff;cursor:pointer;font-size:1.2rem}
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(circle at 50% 40%,#000,transparent 70%);mask-image:radial-gradient(circle at 50% 40%,#000,transparent 70%)}
+.hero .w{position:relative}
+.hero h1 em{background:linear-gradient(90deg,#ff9a3c,#f97316 60%,#ffb86b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge{width:64px;height:64px;margin:0 auto 18px;border-radius:18px;display:grid;place-items:center;font:800 1.8rem "Bricolage Grotesque",sans-serif;background:linear-gradient(135deg,#fff,#dbe6ff);color:var(--navy);box-shadow:0 0 0 6px #ffffff14,0 12px 40px #1f5eff40;animation:fl 4s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-6px)}}
+.btn:not(.o){box-shadow:0 8px 22px #1f5eff44}
+.head h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;background:var(--or);margin-top:10px}
+.card{transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--or);box-shadow:0 12px 30px #0a1f4422}
+.stat{box-shadow:0 10px 30px #0a1f4414}
+.ic{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--soft);font-size:1.4rem;margin-bottom:4px}
+.cert{max-width:620px;margin:0 auto;border-radius:18px;padding:30px;text-align:center;color:#fff;background:linear-gradient(135deg,var(--navy),#16336b);border:2px solid var(--or);box-shadow:0 20px 50px #0a1f4433}
+.cert small{letter-spacing:.14em;color:#ffb780}.cert h3{font-size:1.5rem;margin:8px 0}.cert .nm{font:800 1.8rem "Bricolage Grotesque",sans-serif;color:var(--or)}
+.cert .vf{display:inline-block;margin-top:14px;padding:4px 12px;border-radius:99px;background:#17a67333;color:#5ff0b3;font-size:.8rem;font-weight:600}
+#wa{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff;border-radius:99px;padding:11px 18px;font-weight:600;text-decoration:none;box-shadow:0 8px 24px #0004;z-index:15}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tick div,.badge{animation:none}.card{transition:none}}
+[hidden]{display:none!important}
+#pr{position:fixed;top:0;left:0;height:3px;background:var(--or);width:0;z-index:30}
+.tick{display:none}
+.logo i{background:var(--or);color:#fff}.tl{font-size:.74rem;color:var(--mu);font-weight:500;margin-left:6px}@media(max-width:1100px){.tl{display:none}}
+.hx{background:linear-gradient(120deg,var(--soft),var(--bg) 75%);padding:56px 0 64px;overflow:hidden}
+.hx .w{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+@media(max-width:860px){.hx .w{grid-template-columns:1fr}.hv{max-width:420px;margin:0 auto}}
+.hx h1{font-size:clamp(2.4rem,6vw,3.9rem);font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+.hx .lead{color:var(--mu);font-size:1.12rem;max-width:44ch}
+.hs{display:grid;grid-template-columns:1.3fr 1fr auto;gap:10px;align-items:center;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:10px;box-shadow:0 12px 36px #1f5eff1f;margin:24px 0 14px}
+@media(max-width:620px){.hs{grid-template-columns:1fr}}
+.hs label{font-size:.74rem;color:var(--mu);gap:0}
+.hs input,.hs select{border:0;background:transparent;padding:6px 2px;font-weight:500;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;font-size:.88rem;color:var(--mu)}
+.chips button{background:none;border:0;color:var(--or);font:inherit;cursor:pointer;padding:2px 0}.chips button:hover{text-decoration:underline}
+.hv{position:relative}.hv svg{width:100%;height:auto;display:block}
+.hand{position:absolute;right:0;top:0;font:700 1.6rem/1.1 Caveat,cursive;color:var(--or);transform:rotate(-8deg)}
+.fchip{position:absolute;background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:8px 12px;font-size:.82rem;font-weight:600;box-shadow:0 10px 24px #0a1f4422}
+.eb{color:var(--or);font-weight:700;font-size:.78rem;letter-spacing:.08em;margin-bottom:6px}
+.sec{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.cat{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:20px 12px;text-align:center;cursor:pointer;font:inherit;color:var(--ink);transition:.2s}
+.cat:hover{border-color:var(--or);transform:translateY(-3px);box-shadow:0 12px 28px #1f5eff22}
+.cat .ic{width:56px;height:56px;border-radius:50%;font-size:1.6rem;margin:0 auto 10px}.cat b{display:block}.cat small{color:var(--mu)}
+.tg{display:inline-block;background:#e0f5e9;color:#17844f;border-radius:6px;padding:2px 9px;font-size:.78rem;font-weight:600;margin:0 6px 6px 0}.tg.b{background:var(--soft);color:var(--or)}
+.fi{color:var(--mu);font-size:.88rem}
+.card .btn.ol{align-self:stretch;text-align:center;background:transparent;color:var(--or);border:1.5px solid var(--or);box-shadow:none;border-radius:10px}
+.why{background:var(--soft);border-radius:18px;padding:28px;display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:18px;align-items:center}
+@media(max-width:900px){.why{grid-template-columns:1fr 1fr}.why>div:first-child{grid-column:1/-1}}
+.wy{text-align:center}.wy .ic{margin:0 auto 8px;border-radius:50%}.wy b{display:block}.wy small{color:var(--mu)}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--ln);border-radius:16px;padding:22px 26px}
+.cta h3{margin:0}.cta p{margin:0;color:var(--mu)}
+</style>
+</head>
+<body>
+<div id="pr"></div>
+<div class="tick" aria-hidden="true"><div id="tk"></div></div>
+<header><div class="w bar">
+ <a class="logo" href="#home"><i>V</i>VEDA <em>TECH</em><span class="tl">Learn · Grow · Build your future</span></a>
+ <button class="ib menu" id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+ <nav id="nav" aria-label="Main"><ul>
+  <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#programs">Programs</a></li><li><a href="#internships">Internships</a></li><li><a href="#services">Services</a></li><li><a href="#certification">Certification</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li>
+ </ul></nav>
+ <button class="ib" id="th" aria-label="Toggle theme">◐</button>
+ <button class="btn" data-apply>Apply Now →</button>
+</div></header>
+
+<main>
+<section class="hx" id="home"><div class="w">
+ <div><h1>Your next step starts here</h1>
+ <p class="lead">Find a virtual internship, build real projects with mentor feedback and earn a certificate.</p>
+ <form class="hs" id="hs" role="search"><label>Search programs<input id="hq" placeholder="e.g. Web, Python, Design" maxlength="40"></label><label>Track<select id="hc"><option value="all">All tracks</option></select></label><button class="btn" type="submit">Search</button></form>
+ <div class="chips"><span>Trending:</span><span id="tr" class="chips"></span></div>
+ <div class="chips" style="margin-top:14px"><span>✓ No application fee</span><span>✓ 100% virtual</span><span>✓ Certificate on completion</span></div></div>
+ <div class="hv"><svg viewBox="0 0 440 380" role="img" aria-label="Student holding a laptop"><path d="M60 250C20 150 90 40 210 50s200 90 170 200-120 120-210 110S90 330 60 250z" fill="#cfe1ff"/><circle cx="345" cy="95" r="44" fill="#e3edff"/><path d="M120 380c0-80 40-125 100-135h44c60 10 96 55 96 135z" fill="#10213f"/><rect x="215" y="215" width="50" height="40" rx="18" fill="#c98f6b"/><circle cx="240" cy="168" r="44" fill="#c98f6b"/><path d="M196 166c-6-46 28-62 48-62s52 16 44 62c-8-24-26-34-46-34s-38 10-46 34z" fill="#1b1410"/><g transform="rotate(-10 235 320)"><rect x="160" y="285" width="150" height="92" rx="9" fill="#dde4ef"/><rect x="170" y="294" width="130" height="74" rx="5" fill="#f6f9ff"/></g><path d="M150 330c20 8 40 8 58-6M290 320c-14 14-30 22-48 24" stroke="#10213f" stroke-width="22" stroke-linecap="round" fill="none"/></svg>
+ <div class="hand">Gain Experience<br>Build Skills<br>Get Hired</div>
+ <div class="fchip" style="left:0;bottom:20%">✓ Certificate on completion</div><div class="fchip" style="right:0;bottom:8%">4–6 weeks · Virtual</div></div>
+</div></section>
+
+<section id="categories"><div class="w"><div class="sec"><div class="head"><div class="eb">EXPLORE CATEGORIES</div><h2>Find your dream internship</h2><p>Pick a category to see matching tracks.</p></div><a href="#programs" style="color:var(--or);font-weight:600;text-decoration:none">View all programs →</a></div><div class="cats" id="cats"></div></div></section>
+
+<section id="featured" style="padding-top:0"><div class="w"><div class="head"><div class="eb">FEATURED INTERNSHIPS</div><h2>Top internships for you</h2></div><div class="grid" id="fg"></div>
+ <div class="why" style="margin-top:44px"><div><div class="eb">WHY CHOOSE US</div><h2 style="font-size:1.6rem">More than just an internship</h2><p style="color:var(--mu);margin:0">Real projects, mentor feedback and a certificate you can show.</p></div>
+ <div class="wy"><span class="ic" style="background:#dbe8ff">✅</span><b>100% virtual</b><small>Learn from anywhere</small></div>
+ <div class="wy"><span class="ic" style="background:#dcf5e6">🧑‍🏫</span><b>Mentor review</b><small>Feedback on your tasks</small></div>
+ <div class="wy"><span class="ic" style="background:#e6e4ff">📈</span><b>Level-wise tasks</b><small>Beginner to advanced</small></div>
+ <div class="wy"><span class="ic" style="background:#ffe9d6">⚡</span><b>Free to apply</b><small>No application fee</small></div></div>
+</div></section>
+
+<section id="about"><div class="w">
+ <div class="head"><h2>About Veda Tech</h2><p>Veda Tech runs virtual internships and IT training for B.Tech, BCA, MCA, M.Tech and diploma students and graduates. Its core team also delivers IT services for business clients. Learning is task-based and level-wise, so beginners and advanced learners can both progress.</p></div>
+ <div class="grid">
+  <div class="card"><h3>Learn by building</h3><p>Every program centres on projects you can show to employers.</p></div>
+  <div class="card"><h3>Mentor feedback</h3><p>Get guidance on your work instead of learning alone.</p></div>
+  <div class="card"><h3>Work from anywhere</h3><p>Programs are fully virtual and open across India.</p></div>
+ </div>
+</div></section>
+
+<section id="finder"><div class="w">
+ <div class="head"><h2>Find your track</h2><p>Answer two quick questions and get a suggested starting point.</p></div>
+ <div class="card" style="max-width:640px"><label>What do you enjoy most?<select id="q1"><option value="web">Building websites</option><option value="data">Working with data</option><option value="app">Making apps</option><option value="cloud">Cloud and servers</option><option value="design">Visual design</option></select></label>
+ <label>Your level<select id="q2"><option>Beginner</option><option>Some experience</option><option>Advanced</option></select></label>
+ <button class="btn" id="qb" type="button" style="align-self:flex-start">Show my track</button><div id="qr" role="status"></div></div>
+</div></section>
+
+<section class="alt" id="programs"><div class="w">
+ <div class="head"><h2>Technology and training programs</h2><p>Virtual internship tracks run 4–6 weeks. Filter by track and apply to the one that fits.</p></div>
+ <label style="max-width:360px;margin-bottom:14px">Search programs<input id="ps" type="search" placeholder="Try Python or design"></label>
+ <div class="fl" id="fl" role="group" aria-label="Filter internships"></div>
+ <div class="grid" id="pg"></div>
+</div></section>
+
+<section id="internships"><div class="w">
+ <div class="head"><h2>Internship and training</h2><p>Interns receive an offer letter, a personal dashboard to track tasks and progress, a certificate on completion and a performance-based letter of recommendation. Programs run 4–6 weeks.</p></div>
+ <div class="grid">
+  <div class="card"><h3>100% virtual</h3><p>Join from anywhere in India.</p></div>
+  <div class="card"><h3>Project-based</h3><p>Build real projects instead of only watching lessons.</p></div>
+  <div class="card"><h3>Mentor feedback</h3><p>Get guidance on your work as you go.</p></div>
+  <div class="card"><h3>Free to apply</h3><p>No application fee.</p><button class="btn" data-apply>Apply Now →</button></div>
+ </div>
+</div></section>
+
+<section id="services"><div class="w">
+ <div class="head"><h2>IT and digital services</h2><p>Practical support for businesses that need a reliable technology partner.</p></div>
+ <div class="grid" id="sv"></div>
+</div></section>
+
+<section class="alt" id="certification"><div class="w">
+ <div class="head"><h2>How certification works</h2><p>A clear path from application to certificate.</p></div>
+ <div class="cert"><small>SAMPLE LAYOUT</small><h3>Certificate of Internship</h3><p style="margin:0;color:#c9d6f2">Awarded to</p><div class="nm">Your Name</div><p style="color:#c9d6f2;margin:6px 0 0">For successful completion of an internship track</p><span class="vf">✓ Unique verification ID on real certificates</span></div>
+ <div class="steps" style="margin-top:22px">
+  <div><h3>Apply</h3><p>Fill the free form. No application fee.</p></div>
+  <div><h3>Learn</h3><p>Follow the virtual training and mentor guidance.</p></div>
+  <div><h3>Build</h3><p>Submit your assigned tasks. Attendance is marked from daily task submission.</p></div>
+  <div><h3>Get certified</h3><p>Complete the requirements to earn a certificate with a verification ID, plus a performance-based letter of recommendation.</p></div>
+ </div>
+</div></section>
+
+<section id="reviews"><div class="w">
+ <div class="head"><h2>Reviews</h2><p>Share your experience. Reviews you add are saved in this browser.</p></div>
+ <div class="rv">
+  <div id="rl"></div>
+  <form id="rf" novalidate>
+   <div class="two"><label>Name<input id="rn" maxlength="40"></label><label>Rating<select id="rr"><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select></label></div>
+   <label>Your review<textarea id="rt" rows="3" maxlength="300"></textarea></label>
+   <div class="err" id="re" role="alert"></div>
+   <button class="btn" type="submit">Add review</button>
+  </form>
+ </div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w">
+ <div class="head"><h2>Frequently asked questions</h2></div>
+ <label style="max-width:420px;margin-bottom:16px">Search questions<input id="fs" type="search" placeholder="Type a keyword"></label>
+ <div id="fq"></div>
+</div></section>
+<section id="contact"><div class="w">
+ <div class="head"><h2>Contact</h2><p id="ci"></p></div>
+ <form id="cf" novalidate style="max-width:520px">
+  <input id="hp2" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+  <label>Name<input id="cn" maxlength="60" autocomplete="name"></label>
+  <label>Email<input id="ce" type="email" maxlength="100" autocomplete="email"></label>
+  <label>Message<textarea id="cm" rows="4" maxlength="600"></textarea></label>
+  <div class="err" id="cr" role="alert"></div>
+  <button class="btn" type="submit">Send message</button>
+ </form>
+</div></section>
+<section style="padding:0 0 56px"><div class="w"><div class="cta"><div><h3>Ready to start your journey?</h3><p>Apply free and pick the track that fits you.</p></div><button class="btn" data-apply>Get started →</button></div></div></section>
+</main>
+
+<footer><div class="w"><div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center"><div><a class="logo" href="#home" style="color:#fff"><i>V</i>VEDA <em>TECH</em></a><p style="margin:6px 0 0">Learn · Grow · Build your future</p></div><div style="display:flex;gap:18px;flex-wrap:wrap"><a href="#about">About</a><a href="#programs">Programs</a><a href="#services">Services</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div></div><p id="fc" style="margin:18px 0 0"></p><p style="border-top:1px solid #ffffff18;padding-top:14px;margin:14px 0 0;font-size:.82rem">Veda Tech is a sample brand created for a learning project. Program details are illustrative.</p></div></footer>
+
+<dialog id="dg" aria-labelledby="dt">
+ <div class="dh"><h3 id="dt">Apply for an internship</h3><button class="ib" id="dc" aria-label="Close">✕</button></div>
+ <p style="color:var(--mu);font-size:.9rem">Your application is sent to our team. If the server is unavailable, you can send it by email instead.</p>
+ <form id="af" novalidate>
+  <input id="hp1" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+  <div class="two"><label>Full name<input id="an" maxlength="60" autocomplete="name"></label><label>Phone<input id="ap" inputmode="tel" autocomplete="tel"></label></div>
+  <label>Email<input id="ae" type="email" maxlength="100" autocomplete="email"></label>
+  <label>Track<select id="at"></select></label>
+  <label>Why do you want to join?<textarea id="am" rows="3" maxlength="400"></textarea></label>
+  <div class="err" id="ar" role="alert"></div>
+  <button class="btn" type="submit">Submit application</button>
+ </form>
+</dialog>
+<a id="wa" hidden target="_blank" rel="noopener">WhatsApp</a>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store={get(k){try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return []}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const T=["FREE REMOTE INTERNSHIP 2026","Applications are open across India","100% Virtual Internship","Apply Now →"];
+$("#tk").innerHTML=(T.map((t,i)=>`<span>${i%3==0?"<b>"+t+"</b>":t}</span>✦`).join("")).repeat(4);
+const P=[["Web Development","web","Build web projects in a task-based virtual internship."],["Data Science","data","Work through level-wise data tasks with mentor review."],["Data Analytics","data","Practise analysing and presenting data."],["Python Programming","data","Learn Python through assigned daily tasks."],["Android Development","app","Build mobile app projects for your portfolio."],["Java","app","Practise Java through structured tasks."],["Cloud Computing","cloud","Learn cloud concepts through hands-on tasks."],["Graphic Design","design","Create design work you can show."],["UI/UX","design","Practise interface and user-experience design."]];
+const S=[["Web Development","Business websites built for production."],["App Development","Mobile and app solutions for your project."],["Cloud Computing","Cloud setup and support for your business."],["Data Science","Data work that supports business decisions."],["Digital Marketing","Marketing support for your digital presence."]];
+const F=[["Is the internship free?","Yes. There is no application fee."],["Is it virtual or offline?","It is 100% virtual. You complete it remotely with your own device and internet connection."],["How long is the internship?","Programs generally run 4–6 weeks. Your offer letter states the exact duration and start date."],["When do I get the offer letter?","After the application and verification process. This usually takes about 1–2 weeks."],["Can I use the intern dashboard without applying?","No. Dashboard access is only for candidates who completed the official application and received an offer or confirmation letter."],["Will I get a certificate?","Yes, if you complete the required activities. Every certificate carries a unique verification ID."],["What if I miss my assigned tasks?","Missing deadlines can affect your completion and certificate eligibility."],["Is attendance important?","Yes. Attendance is marked from your daily task submission."]];
+const IC={web:"🌐",data:"📊",app:"📱",cloud:"☁️",design:"🎨"};
+const cats=["all",...new Set(P.map(p=>p[1]))];
+$("#fl").innerHTML=cats.map((c,i)=>`<button aria-pressed="${i==0}" data-f="${c}">${c[0].toUpperCase()+c.slice(1)}</button>`).join("");
+let cf="all";function rp(f){cf=f;const q=($("#ps")?.value||"").toLowerCase();$("#pg").innerHTML=P.filter(p=>(f=="all"||p[1]==f)&&(p[0]+" "+p[2]).toLowerCase().includes(q)).map(p=>`<article class="card"><span class="ic">${IC[p[1]]}</span><span class="t">${p[1].toUpperCase()}</span><h3>${p[0]}</h3><p>${p[2]}</p><button class="btn" data-apply data-t="${p[0]}">Apply</button></article>`).join("")}
+rp("all");
+$("#ps").oninput=()=>{rp(cf);if(!$("#pg").children.length)$("#pg").innerHTML='<div class="empty">No program matches. Try another word.</div>'};
+$("#fl").onclick=e=>{const b=e.target.closest("button");if(!b)return;$$("#fl button").forEach(x=>x.setAttribute("aria-pressed",x==b));rp(b.dataset.f)};
+$("#sv").innerHTML=S.map((s,i)=>`<article class="card"><span class="ic">${["🌐","📱","☁️","📊","📣"][i]}</span><h3>${s[0]}</h3><p>${s[1]}</p></article>`).join("");
+function rf(q=""){q=q.toLowerCase();const r=F.filter(f=>(f[0]+f[1]).toLowerCase().includes(q));$("#fq").innerHTML=r.length?r.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join(""):'<div class="empty">No matching question. Try another keyword.</div>'}
+rf();$("#fs").oninput=e=>rf(e.target.value);
+$("#at").innerHTML=P.map(p=>`<option>${p[0]}</option>`).join("");
+const CFG={email:"hello@vedatech.example",phone:"",whatsapp:"",location:""};
+{const b=[];if(CFG.email)b.push('Email <a href="mailto:'+esc(CFG.email)+'">'+esc(CFG.email)+'</a>');if(CFG.phone)b.push('Call <a href="tel:'+esc(CFG.phone)+'">'+esc(CFG.phone)+'</a>');if(CFG.location)b.push(esc(CFG.location));$("#ci").innerHTML=b.join(" · ");$("#fc").textContent=[CFG.email,CFG.phone,CFG.location].filter(Boolean).join(" · ");if(CFG.whatsapp){const w=$("#wa");w.href="https://wa.me/"+CFG.whatsapp.replace(/\D/g,"");w.hidden=false}}
+let last=0;
+async function post(k,d,r,n,u){
+ if(d.website)return;
+ if(Date.now()-last<15000){r.className="err";r.textContent="Please wait a few seconds before sending again.";return}
+ last=Date.now();r.className="ok";r.textContent="Sending...";
+ try{const c=new AbortController(),t=setTimeout(()=>c.abort(),5000);
+  const x=await fetch("/api/"+k,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d),signal:c.signal});clearTimeout(t);
+  if(!x.ok)throw 0;r.textContent="Thanks "+n+". We received your message."}
+ catch(e){r.innerHTML='Thanks '+esc(n)+'. <a href="'+u+'" target="_blank" rel="noopener">Tap here to send it by email</a>.'}}
+$("#qb").onclick=()=>{const v=$("#q1").value,l=$("#q2").selectedIndex+1,p=P.find(x=>x[1]==v);$("#qr").innerHTML='<p style="margin:14px 0 8px"><b>'+esc(p[0])+'</b> · start at Level '+l+'</p><button class="btn" data-apply data-t="'+esc(p[0])+'">Apply for this track →</button>'};
+const CT={web:["Web Development","#e6efff"],data:["Data & Python","#e2f6ea"],app:["App & Java","#fdeede"],cloud:["Cloud Computing","#e8e6ff"],design:["Design & UI/UX","#fde6ee"]};
+$("#cats").innerHTML=Object.keys(CT).map(k=>`<button class="cat" data-c="${k}"><span class="ic" style="background:${CT[k][1]}">${IC[k]}</span><b>${esc(CT[k][0])}</b><small>${P.filter(p=>p[1]==k).length} tracks</small></button>`).join("");
+$("#hc").innerHTML+=Object.keys(CT).map(k=>`<option value="${k}">${esc(CT[k][0])}</option>`).join("");
+function show(q,c){$("#ps").value=q;rp(c);$$("#fl button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.f==c));if(!$("#pg").children.length)$("#pg").innerHTML='<div class="empty">No program matches. Try another word.</div>';$("#programs").scrollIntoView({behavior:"smooth"})}
+$("#cats").onclick=e=>{const b=e.target.closest("[data-c]");if(b)show("",b.dataset.c)};
+$("#hs").onsubmit=e=>{e.preventDefault();show($("#hq").value.trim(),$("#hc").value)};
+$("#tr").innerHTML=["Web Development","Python","Data Science","Cloud","Java","UI/UX"].map(t=>`<button type="button">${t}</button>`).join("");
+$("#tr").onclick=e=>{if(e.target.tagName=="BUTTON")show(e.target.textContent,"all")};
+$("#fg").innerHTML=[0,1,3,6].map(i=>P[i]).map(p=>`<article class="card" style="position:relative"><span class="tg b" style="position:absolute;right:14px;top:14px">Featured</span><span class="ic" style="width:50px;height:50px;background:${CT[p[1]][1]}">${IC[p[1]]}</span><h3 style="margin-top:8px">${esc(p[0])}</h3><p style="flex:0">Virtual internship</p><div><span class="tg">Remote</span><span class="tg b">4–6 weeks</span><span class="tg b">Free</span></div><div class="fi">🎓 Certificate on completion</div><div class="fi">📂 ${esc(CT[p[1]][0])}</div><button class="btn ol" data-apply data-t="${esc(p[0])}">View details &amp; apply →</button></article>`).join("");
+const dg=$("#dg");
+document.addEventListener("click",e=>{const b=e.target.closest("[data-apply]");if(!b)return;if(b.dataset.t)$("#at").value=b.dataset.t;$("#ar").textContent="";$("#ar").className="err";dg.showModal()});
+$("#dc").onclick=()=>dg.close();
+dg.addEventListener("click",e=>{if(e.target===dg)dg.close()});
+$("#af").onsubmit=e=>{e.preventDefault();const r=$("#ar"),n=$("#an").value.trim(),em=$("#ae"),p=$("#ap").value.trim();
+ if(n.length<2)return r.textContent="Enter your full name.";
+ if(!em.value||!em.checkValidity())return r.textContent="Enter a valid email address.";
+ if(!/^[+\d][\d\s-]{8,14}$/.test(p))return r.textContent="Enter a valid phone number.";
+ const a=store.get("apps");a.push({n,email:em.value,p,t:$("#at").value,m:$("#am").value.trim(),d:new Date().toISOString()});store.set("apps",a);
+ const u="mailto:"+CFG.email+"?subject="+encodeURIComponent("Internship application: "+$("#at").value)+"&body="+encodeURIComponent("Name: "+n)+"%0A"+encodeURIComponent("Phone: "+p+" | Email: "+em.value)+"%0A"+encodeURIComponent("Track: "+$("#at").value+" | Why: "+$("#am").value.trim());post("apply",{name:n,email:em.value,phone:p,track:$("#at").value,message:$("#am").value.trim(),website:$("#hp1").value},r,n,u)};
+function rr(){const l=store.get("reviews");$("#rl").innerHTML=l.length?l.slice().reverse().map(v=>`<div class="card" style="margin-bottom:12px"><span class="star" aria-label="${v.r} of 5">${"★".repeat(v.r)}${"☆".repeat(5-v.r)}</span><p>${esc(v.t)}</p><b>${esc(v.n)}</b></div>`).join(""):'<div class="empty">No reviews yet. Be the first to add one.</div>'}
+rr();
+$("#rf").onsubmit=e=>{e.preventDefault();const n=$("#rn").value.trim(),t=$("#rt").value.trim();
+ if(!n||t.length<10)return $("#re").textContent="Add your name and a review of at least 10 characters.";
+ const l=store.get("reviews");l.push({n,t,r:+$("#rr").value});store.set("reviews",l);$("#re").textContent="";e.target.reset();rr()};
+const nav=$("#nav"),mb=$("#mb");
+mb.onclick=()=>mb.setAttribute("aria-expanded",nav.classList.toggle("open"));
+$$("#nav a").forEach(a=>a.onclick=()=>{nav.classList.remove("open");mb.setAttribute("aria-expanded",false)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$("#nav a").forEach(l=>l.classList.toggle("on",l.getAttribute("href")=="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+$$("main section").forEach(s=>io.observe(s));
+$("#th").onclick=()=>{const d=document.documentElement,dark=getComputedStyle(d).getPropertyValue("--bg").trim()=="#081226";d.dataset.theme=dark?"light":"dark"};
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const el=e.target,n=+el.dataset.n,s=el.dataset.s;let i=0;const st=()=>{i=Math.min(n,i+Math.max(1,Math.ceil(n/40)));el.textContent=(s=="₹"?"₹":"")+i+(s=="%"?"%":"");if(i<n)requestAnimationFrame(st)};st()}));
+$$("[data-n]").forEach(el=>cio.observe(el));
+$("#cf").onsubmit=e=>{e.preventDefault();const r=$("#cr"),n=$("#cn").value.trim(),em=$("#ce"),m=$("#cm").value.trim();r.className="err";
+ if(n.length<2)return r.textContent="Enter your name.";
+ if(!em.value||!em.checkValidity())return r.textContent="Enter a valid email address.";
+ if(m.length<10)return r.textContent="Write a message of at least 10 characters.";
+ const a=store.get("msgs");a.push({n,email:em.value,m,d:new Date().toISOString()});store.set("msgs",a);
+ const u="mailto:"+CFG.email+"?subject="+encodeURIComponent("Website enquiry from "+n)+"&body="+encodeURIComponent(m+" (Reply to: "+em.value+")");post("contact",{name:n,email:em.value,message:m,website:$("#hp2").value},r,n,u)};
+const tp=$("#top");addEventListener("scroll",()=>{tp.style.display=scrollY>600?"block":"none";$("#pr").style.width=(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100)+"%"},{passive:true});tp.onclick=()=>scrollTo({top:0});
+</script>
+</body>
+</html>
